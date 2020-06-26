@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+
+body{
+  font-size: 62.5%;
+  font-family: $font-main;
+  line-height: 1rem;
+  background-color: $color-background;
+  margin:auto;
+
+  @media (min-width:952px){
+    width: 952px;
+  }
+}
+
+.page{
+  background-color: $color-white;
+  margin: 0 1rem;
+}
+
+
+
+

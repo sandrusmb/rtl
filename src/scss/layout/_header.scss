@@ -1,0 +1,17 @@
+.container{
+
+  @include Navegator;
+  background-color:$color-white;
+  justify-content: flex-end;
+  padding: 1rem 2rem; 
+
+
+    &_li{
+    @include Item;
+    }
+
+    &_btn{
+      @include Button;  
+    }
+   
+}

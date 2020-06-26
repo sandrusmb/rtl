@@ -1,0 +1,46 @@
+.footer{
+
+  @include Navegator;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: $color-background;
+  margin-bottom: 1rem;
+
+  &_menu{
+    list-style: none;
+    display:flex;
+    flex-direction:row;
+    margin:1rem 0;
+
+    &-element{
+      @include Item;
+    }
+  }
+
+  &_terms{
+    text-align: right;
+
+    &_div{
+      display: flex;
+      flex-direction: row;
+      color:$color-feature;
+      
+      &-span{
+        margin:0 0.2rem;
+      }
+
+      &-p{
+        cursor: pointer;
+        &:hover{
+          transition: font-weight color ease 0.5s;
+          font-weight: bold;
+          color:$color-general;
+        }
+      }
+    }
+
+    &_copyright{
+      color:$color-text;
+    }
+  }
+}
