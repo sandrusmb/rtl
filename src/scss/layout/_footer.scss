@@ -7,9 +7,10 @@
   margin-bottom: 1rem;
 
   &_menu{
+    
     list-style: none;
     display:flex;
-    flex-direction:row;
+    flex-direction:row-reverse;
     margin:1rem 0;
 
     &-element{
@@ -18,7 +19,8 @@
   }
 
   &_terms{
-    text-align: right;
+  
+    text-align: left;
 
     &_div{
       display: flex;
