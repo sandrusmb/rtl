@@ -4,22 +4,12 @@
   @media all and (min-width: 700px){
     display:flex;
     flex-direction: row-reverse;
-    
   }
  
   &_container{
    width: 100%;
-   
-
-  /*  @media (min-width: 576px){
-    width: 70%;
-    border: 1px solid purple;
-  } */
-
-   /*  BLOQUE 1 */
 
     &_header{
-      
       background-color: $color-feature;
       display:flex;
       flex-direction: row;
@@ -34,18 +24,13 @@
       }
     }
 
-     /*  BLOQUE 2 */
-
     &_body{
-     
       display:flex;
       flex-direction: row-reverse;
       align-items: center;
       justify-content: space-between;
-      /* border-top:0.3rem solid $color-white; */
       background-color: $color-background;
     
-
       &_title{   
         width: 30%;
         display:flex;
@@ -54,7 +39,6 @@
         border-left:0.4rem solid $color-white;
         padding: 1rem 3rem;
         flex-grow: 5;
-      
        }
       
       &_form{
@@ -65,11 +49,6 @@
         padding: 1rem 1rem 0 1rem;
         flex-grow: 5;
         flex-wrap: wrap;
-       
-      /*   @media (min-width: 952px){
-          margin-bottom:1rem;
-          flex-wrap: nowrap;
-        } */
 
         &-input{
         padding:0.5rem;
@@ -80,12 +59,9 @@
 
         &-btn{
         @include Button;
-
         }
       }
     }
-
-     /*  BLOQUE 3 */
 
     &_gallery{
       display: flex;
@@ -93,7 +69,6 @@
       flex-wrap: nowrap;
       margin: 1rem 0;
     
-
       &_box{
         width: 10%;
         display: flex;
@@ -128,34 +103,20 @@
       }
     }
 
-     /*  BLOQUE 4 */
-
     &_footer{
       border-bottom:0.1rem solid $color-background;
 
       &-p{
         margin-bottom:1rem;
-
-       /*  @media (min-width: 952px){
-          margin-bottom:1rem;
-        } */
       }
 
       &-span{
         color: $color-btn;
-
-        
-  
-        /* @media (min-width: 952px){
-          padding:0;
-          margin:0;
-        } */
       }
     }
   }
 
   &_aside{
-  
     display:flex;
     flex-direction: row;
     margin-top:1rem;
@@ -167,14 +128,11 @@
    
 
     @media all and (min-width: 700px){
-      
       flex-direction: column;
       margin:0 1rem 0 0;
-
     }
 
     &_user{
-     
       padding:1rem;
       background-color: $color-general;
       margin: 0rem 0.3rem 0 0;
@@ -187,24 +145,25 @@
       }
 
       &_name{
+
         &-h1{
           font-size:1rem;
         }
+
         &-p{
           font-weight: bold;
         }
+
         &-span{
           font-weight: normal;
         }
 
       }
    
-
       &_options{
         
         display:flex;
         flex-direction:row-reverse;
-
 
         @media all and (min-width: 700px){
           flex-direction:column;
@@ -215,12 +174,10 @@
         }
   
         &-icon{
-          
           display:flex;
           flex-direction:row-reverse;
           margin: 0.5rem 0 0.5rem 0;
      
-
           &-img{
             width: 1rem;
             height: 1rem; 
@@ -233,13 +190,10 @@
       }
     }
 
-    /*  BLOQUE 5 */
-
     &_status{
       
       padding:1rem;
       background-color: $color-background;
-      /* margin: 1rem 0 1rem 0.3rem; */
       color: $color-white;
       
 
@@ -267,7 +221,6 @@
     
         display:flex;
         flex-direction:row-reverse;
-        /* align-items: flex-start; */
         background-color: $color-white;
         color: $color-text;
         font-weight: bold;
@@ -283,7 +236,6 @@
         }
 
         &-description{
-         
           margin-left: 2rem;
         
           @media all and (min-width: 700px){
@@ -293,13 +245,10 @@
           }
         }
 
-
         &_cta{
-
           display:flex;
           flex-direction: row-reverse;
          
-
           &-p{
             color:$color-btn;
             margin-left: 0.3rem;
@@ -311,19 +260,10 @@
            }
    
            &-tv{
-             
-           
-            height: 1rem;
-   
-            
-             
+            height: 1rem;    
             }
         }
-
-        
       }
     }
   }
-
-
 }

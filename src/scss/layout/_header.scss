@@ -5,14 +5,11 @@
   justify-content: flex-end;
   padding: 1rem 2rem; 
 
-
-    &_li{
-      
+    &_li{ 
     @include Item;
     }
 
-    &_btn{
-      
+    &_btn{ 
       @include Button;  
     }
    
