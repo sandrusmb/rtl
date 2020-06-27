@@ -38,7 +38,7 @@
 
     &_body{
       display:flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       align-items: center;
       justify-content: space-between;
       /* border-top:0.3rem solid $color-white; */
@@ -88,7 +88,7 @@
 
     &_gallery{
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       flex-wrap: nowrap;
       margin: 1rem 0;
     
@@ -178,6 +178,7 @@
       background-color: $color-general;
       margin: 0rem 0.3rem 0 0;
       color: $color-white;
+      text-align: right;
 
       @media all and (min-width: 700px){
        margin:0 0 1rem 0;
@@ -201,7 +202,7 @@
       &_options{
         
         display:flex;
-        flex-direction:row;
+        flex-direction:row-reverse;
 
 
         @media all and (min-width: 700px){
@@ -215,8 +216,8 @@
         &-icon{
           
           display:flex;
-          flex-direction:row;
-          margin: 0.5rem 1rem 0.5rem 0;
+          flex-direction:row-reverse;
+          margin: 0.5rem 0 0.5rem 0;
      
 
           &-img{
@@ -244,7 +245,7 @@
       &_help{
         
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
         margin-bottom: 1rem;
        
@@ -264,26 +265,26 @@
       &_demo{
     
         display:flex;
-        flex-direction:row;
-        align-items: flex-start;
+        flex-direction:row-reverse;
+        /* align-items: flex-start; */
         background-color: $color-white;
         color: $color-text;
         font-weight: bold;
         padding: 1rem;
+        text-align: right;
 
         @media all and (min-width: 700px){
           flex-direction:column;
         }
 
         @media (min-width: 800px){
-          flex-direction:row;
+          flex-direction:row-reverse;
         }
 
         &-description{
-          
-          margin-right: 2rem;
-          
-
+         
+          margin-left: 2rem;
+        
           @media all and (min-width: 700px){
             margin-bottom: 1rem;
             margin-right: 0;
@@ -291,21 +292,34 @@
           }
         }
 
-        &-cta{
+
+        &_cta{
+
+          display:flex;
+          flex-direction: row-reverse;
+         
+
+          &-p{
+            color:$color-btn;
+            margin-left: 0.3rem;
+   
+            @media (min-width: 800px){
+             margin-left: 1rem;
+             text-align: right;
+           }
+           }
+   
+           &-tv{
+             
+             width: 1rem;
+             height: 1rem;
+   
+            
+             
+            }
+        }
+
         
-         color:$color-btn;
-         margin-right: 0.3rem;
-
-         @media (min-width: 800px){
-          margin-left: 1rem;
-          text-align: right;
-        }
-        }
-
-        &-tv{
-          width: 1rem;
-          height: 1rem;
-         }
       }
     }
   }
