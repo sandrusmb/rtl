@@ -37,6 +37,7 @@
      /*  BLOQUE 2 */
 
     &_body{
+     
       display:flex;
       flex-direction: row-reverse;
       align-items: center;
@@ -50,7 +51,7 @@
         display:flex;
         flex-direction: column;
         align-items: center;
-        border-right:0.4rem solid $color-white;
+        border-left:0.4rem solid $color-white;
         padding: 1rem 3rem;
         flex-grow: 5;
       
@@ -109,11 +110,11 @@
           background: $color-feature; 
           box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25),
         4px 4px 10px rgba(0, 0, 0, 0.2);
-          margin:0.2rem 0.2rem 0.2rem 0;
+          margin:0.2rem 0rem 0.2rem 0.2rem;
         }
 
         &:last-child{
-          margin:0.2rem 0 0.2rem 0.2rem;
+          margin:0.2rem 0.2rem 0.2rem 0;
         }
 
         &-img{
