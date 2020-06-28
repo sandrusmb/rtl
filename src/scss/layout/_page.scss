@@ -117,13 +117,15 @@
 
     &_footer{
       border-bottom:0.1rem solid $color-background;
+      text-align: right;
 
       &-p{
+        color: $color-btn; 
         margin-bottom:1rem;
       }
 
       &-span{
-        color: $color-btn;
+        color: $color-text; 
       }
     }
   }
@@ -173,7 +175,6 @@
       }
    
       &_options{
-        
         display:flex;
         flex-direction:row-reverse;
 
@@ -182,7 +183,7 @@
         }
 
         @media (min-width: 800px){
-          flex-direction:row;
+          flex-direction:row-reverse;
         }
   
         &-icon{
